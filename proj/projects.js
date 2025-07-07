@@ -3,6 +3,7 @@ let numTwo = document.getElementById("two");
 let result = document.getElementById("output");
 
 function doAdd() {
+  // add the two inputs
   value = Number(numOne.value) + Number(numTwo.value);
 
   if (value < 0) {
@@ -13,6 +14,7 @@ function doAdd() {
 }
 
 function doSubtract() {
+  // subtract the two inputs
   value = Number(numOne.value) - Number(numTwo.value);
 
   if (value < 0) {
@@ -23,6 +25,7 @@ function doSubtract() {
 }
 
 function doMultiply() {
+  // multiply the two inputs
   value = Number(numOne.value) * Number(numTwo.value);
 
   if (value < 0) {
@@ -33,6 +36,7 @@ function doMultiply() {
 }
 
 function doDivide() {
+  // devide the first input by the second input
   value = Number(numOne.value) / Number(numTwo.value);
 
   if (value < 0) {
@@ -43,6 +47,7 @@ function doDivide() {
 }
 
 function doPower() {
+  // raise the value of the first input to the value of the second input
   let value = 1;
 
   for (let i = 0; i < Number(numTwo.value); i++) {
@@ -57,6 +62,7 @@ function doPower() {
 }
 
 function doClear() {
+  // clear the result and the two inputs
   numOne.value = "";
   numTwo.value = "";
   result.innerHTML = `${String()}`;
